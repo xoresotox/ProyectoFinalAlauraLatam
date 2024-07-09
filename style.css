@@ -1,0 +1,280 @@
+body {
+    background-color: rgb(231, 231, 255);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left {
+    flex: 2;
+}
+
+.right {
+    flex: 0.7;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    height: 500px;
+}
+
+.imagenLogo {
+    width: 10%;
+    height: auto;
+    margin-top: 2%;
+}
+
+.inputText {
+    border: none;
+    background: none;
+    color: rgb(0, 0, 0);
+    font-size: 170%;
+    font-family: Tahoma;
+    width: 70%;
+    height: 200px;
+    padding: 10px;
+    margin-left: 10%;
+    box-sizing: border-box;
+    resize: none;
+    outline: none;
+}
+
+.inputText::placeholder {
+    color: navy;
+}
+
+#texto {
+    height: 320px;
+    width: 85%;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.instructions {
+    margin-bottom: 10px;
+    color: navy;
+    font-size: 14px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.btn {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn.decrypt {
+    background-color: lightgrey;
+    color: navy;
+    margin: 0 10px;
+    border: 2px solid navy;
+}
+
+.btn.copy {
+    background-color: navy;
+    font-size: 120%;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 20px;
+    margin-top: 10%;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.right-image {
+    width: 60%;
+    height: auto;
+    margin-top: 40%;
+}
+
+.message {
+    color: navy;
+}
+
+.message p {
+    margin: 10px 0;
+}
+
+#mensajeFuerte {
+    font-weight: bold;
+    font-size: 170%;
+    padding: 15px;
+    text-align: center;
+}
+
+.right .inputText {
+    width: 90%;
+    height: 400px;
+    font-size: 150%;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Media queries for tablets */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .right {
+        width: 95%;
+        height: auto;
+        margin-bottom: 100px;
+    }
+
+    .inputText {
+        width: 90%;
+        margin-left: 10;
+        font-size: 190%;
+    }
+
+    #texto {
+        height: 420px;
+    }
+
+    .buttons {
+        width: 50%;
+        font-size: 170%;
+    }
+
+    .btn {
+        padding: 12px;
+        font-size: 90%;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .right-image {
+        display: none;
+    }
+
+    .instructions {
+        font-size: 120%;
+        margin-top: -20px;
+    }
+
+    #mensajeFuerte {
+        font-size: 180%;
+    }
+
+    .right .inputText {
+        font-size: 30px;
+        height: 200px;
+    }
+
+    .btn.copy {
+        margin-top: 3%;
+    }
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 480px) {
+    .imagenLogo {
+        width: 20%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: start;
+        margin-left: -10%;
+    }
+
+    .inputText {
+        width: 90%;
+        font-size: 230%;
+    }
+
+    .btn {
+        display: flex;
+        padding: 10px;
+        font-size: 120%;
+        width: 180%;
+        margin: 5px 0;
+    }
+
+    #texto {
+        height: 600px;
+    }
+
+    .btn.copy {
+        margin-top: 15px;
+        margin-bottom: -180px;
+        padding: 10px;
+        font-size: 130%;
+        justify-content: center;
+        width: 95%;
+    }
+
+    .buttons-container {
+        margin-top: 10%;
+    }
+
+    .instructions {
+        font-size: 120%;
+    }
+
+    .right-image {
+        display: none;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        width: 55%;
+    }
+
+    .btn.encrypt {
+        margin: 5px 0;
+        justify-content: center;
+    }
+
+    .btn.decrypt {
+        margin: 5px 0;
+        justify-content: center;
+    }
+
+    .message {
+        font-size: 120%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+    }
+
+    #mensajeFuerte {
+        font-size: 190%;
+    }
+
+    .right .inputText {
+        font-size: 200%;
+        height: 130px;
+    }
+}
